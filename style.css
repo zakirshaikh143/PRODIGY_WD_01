@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100&family=Young+Serif&display=swap');
+
+:root{
+    --matte-black : #28282b
+}
+body{
+    background-image: url(/Assests/Bg.jpg);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    color: green;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.text-container{
+    font-size: 5rem;
+    background-color: var(--matte-black);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px 1px green;
+}
+.counter-container{
+    background-color: var(--matte-black);
+    padding: 1rem;
+    border-end-end-radius: 1rem;
+    border-end-start-radius: 1rem;
+    box-shadow: 2px 2px 4px 1px green;
+}
+.counter{
+    font-size: 4rem;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 11rem;
+}
+button{
+    color: black;
+    background-color: green;
+    border: none;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    font-size: large;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px 1px white;
+}
+button#str{
+    background-color: #00ff00;
+}
+button#stp{
+    background-color: #ff0000;
+}
+button#rest{
+    background-color: rgb(17, 168, 135);
+}
+button#lap{
+    background-color: orange;
+}
+button:active{
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+.lap-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lap-record{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: var(--matte-black);
+    border-radius: 0.5rem;
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 768px) {
+html{
+    font-size: 50%;
+}
+
+}
